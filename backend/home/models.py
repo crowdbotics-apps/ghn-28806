@@ -12,3 +12,8 @@ class CustomText(models.Model):
 class HomePage(models.Model):
     "Generated Model"
     body = models.TextField()
+    login = models.DateField(
+        auto_now=True,
+        null=True,
+        blank=True,
+    )
